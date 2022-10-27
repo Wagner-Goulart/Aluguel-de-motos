@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(142, 142, 142);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    height: 50px;
+}
+
+header > nav > ul {
+    position: relative;
+    top: 5px;
+    list-style-type: none;
+}
+
+header > nav > ul > li > a {
+   text-decoration: none;
+   color: white;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* HEADER STYLES */
+header > nav > ul > li:not(last-child) {
+    margin-left: 15px;
+}
+
+header > nav > ul > li:hover {
+    color: black;
+    background-color: rgb(39, 38, 38);
+    border: 2px solid black;
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+section#banner {
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    background-image: url(../imagens/main-bg-img.jpg);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center, center;
+}
+
+section > div {
+    position: relative;
+    right: 20px;
+    width: 30vw;
+    height: 70vh;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.638);
+    border-radius: 10px;
+}
+
+section > div > h1 {
+    font-size: 2em;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+    color: rgb(187, 40, 40);
+    
+}
+
+section > div > p {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+section > div > a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+section > div > a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.638);
+    border: 2px solid red;
+    transition: .3s;
+}
+/* SOBRE NÓS STYLES*/
+#about {  
+    position: relative;
+    margin: auto;
+    top: 30px;
+    width: 80vw;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#about > h1 {
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+    color: white;
+    font-variant: small-caps;
+    background-color: rgb(136, 134, 134);
+    border-radius: 10px;
+}
+
+#about > article {
+    display: flex;
+    padding: 15px;
+}
+
+#about-img {
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#about-img > img {
+   width: 100%;
+   height: 100%;
+}
+
+#about-content {
+    margin: 10px;
+}
+#about-content > p {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+/*ORÇAMENTO STYLES*/
+
+#price {
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 80vw;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#price > h2 {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: white;
+    font-variant: small-caps;
+    background-color: rgb(136, 134, 134);
+    border-radius: 10px;
+}
+
+.slider {
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slides > input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    height: 100%;
+    transition: .6s;
+}
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*Navigation bar styles*/
+
+.navigation {
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+
+
+.bar {
+    position: relative;
+    left: 40%;
+    bottom: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+   
+}
+
+.bar:hover {
+    transition: .6s;
+    background-color: white;
+}
+
+.bar:not(:last-child) {
+    margin-right: 10px;
+}
+
+/*ESTILOS PARA FAZER O CORROUSEL FUNCIONAR*/
+
+#slide1:checked ~ .first {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .first{
+    margin-left: -50%;
+}
+#slide4:checked ~ .first{
+    margin-left: -75%;
+}
+
+/*ROTEIRO STYLES*/
+
+#travels {
+    position: relative;
+    margin: auto;
+    top: 70px;
+    width: 80vw;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+#travels > h2 {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: white;
+    font-variant: small-caps;
+    background-color: rgb(136, 134, 134);
+    border-radius: 10px;
+}
+
+.travel-slider {
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.travel-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.travel-slide {
+    width: 50%;
+    height: 100%;
+}
+
+.travel-slide > img {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    
+}
+
+.travel-slide > img:hover {
+    opacity: 1;
+    transition: .2s;
+}
