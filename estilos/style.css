@@ -205,7 +205,6 @@ section > div > a:hover {
     display: flex;
 }
 
-
 .bar {
     position: relative;
     left: 40%;
@@ -242,6 +241,11 @@ section > div > a:hover {
 #slide4:checked ~ .first{
     margin-left: -75%;
 }
+
+#slide1:checked ~ .manual .mark1 {
+    background-color: black;
+}
+
 
 /*ROTEIRO STYLES*/
 
@@ -284,6 +288,7 @@ section > div > a:hover {
 .travel-slide {
     width: 50%;
     height: 100%;
+    cursor: pointer;
 }
 
 .travel-slide > img {
