@@ -302,3 +302,89 @@ section > div > a:hover {
     opacity: 1;
     transition: .2s;
 }
+
+/*FORMULARIO*/
+
+#form {
+    position: relative;
+    margin: auto;
+    top: 100px;
+    width: 80vw;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+#form > h2 {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: white;
+    font-variant: small-caps;
+    background-color: rgb(136, 134, 134);
+    border-radius: 10px;
+}
+
+#form > p {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: white;
+    font-variant: small-caps;
+    background-color: rgb(136, 134, 134);
+    border-radius: 10px;
+}
+
+form {
+    margin: auto;
+    width: 70%;
+    height: 200px;
+    padding:10px;
+    border-radius: 15px;
+    background-color: rgb(136, 134, 134)
+}
+
+.campos {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.campos > label {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white
+}
+
+.campos > input {
+    background-color: lightgray;
+    margin-left: 5px;
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px
+}
+
+.campos > input:focus-within {
+    background-color: white
+}
+
+.campos > input[type=submit] {
+    background-color: rgb(225, 27, 27);
+    color: white;
+    border-radius: 10px;
+    width: 30%;
+    border: none;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.campos > input[type=submit]:hover {
+    background-color: white;
+    color:red;
+    border: 2px solid red;
+    transition: .4s;
+}
